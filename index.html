@@ -576,12 +576,18 @@
         font-weight: 500;
         transition: all 0.2s;
         letter-spacing: 0.3px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        gap: 6px;
+        min-width: 76px;
+        flex-shrink: 0;
     }
     .theme-toggle:hover { border-color: var(--highlight); color: var(--highlight); }
 
     /* ── Responsive ── */
     @media (max-width: 700px) {
-        nav { padding: 16px 24px; flex-wrap: wrap; gap: 12px; }
+        nav { padding: 16px 24px; gap: 12px; }
         .nav-links { gap: 16px; }
         .hero { padding: 100px 24px 60px; }
         .hero-content { max-width: 100%; }
@@ -599,7 +605,7 @@
     @media (max-width: 420px) {
         .nav-links { gap: 10px; }
         .nav-links a { font-size: 0.65rem; }
-        .theme-toggle { padding: 5px 9px; font-size: 0.68rem; }
+        .theme-toggle { padding: 5px 9px; font-size: 0.68rem; min-width: 68px; }
     }
 </style>
 </head>
@@ -712,7 +718,7 @@
 
         <h1 class="fade-in">Backend by instinct,<br><span class="accent">full-stack</span> by trade.</h1>
 
-        <p class="hero-sub fade-in">Junior Software Developer — currently engineering enterprise back-office platforms at Ideal Solutions, Centurion.</p>
+        <p class="hero-sub fade-in">Junior Software Developer — currently engineering enterprise back-office platforms at Ideal Solution, Centurion.</p>
 
         <div class="hero-btns fade-in">
             <a href="#projects" class="btn-hero-primary">see my work</a>
@@ -817,7 +823,7 @@
                 <div class="project-icon"><i class="fa-solid fa-car"></i></div>
                 <h3>Drive.co.za</h3>
             </div>
-            <p>Built APIs and backend-for-frontend (BFF) layers for Drive.co.za, wiring up client-side screens across stock management, legal contract workflows, and finance reporting — delivered as a client project through Ideal Solutions.</p>
+            <p>Built APIs and backend-for-frontend (BFF) layers for Drive.co.za, wiring up client-side screens across stock management, legal contract workflows, and finance reporting — delivered as a client project through Ideal Solution.</p>
             <div class="project-tags">
                 <span class="project-tag">Java</span>
                 <span class="project-tag">Spring Boot</span>
