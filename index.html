@@ -581,14 +581,25 @@
 
     /* ── Responsive ── */
     @media (max-width: 700px) {
-        nav { padding: 16px 24px; }
+        nav { padding: 16px 24px; flex-wrap: wrap; gap: 12px; }
         .nav-links { gap: 16px; }
         .hero { padding: 100px 24px 60px; }
         .hero-content { max-width: 100%; }
+        .hero-btns { flex-direction: column; align-items: stretch; }
+        .btn-hero-primary { text-align: center; }
+        .btn-hero-ghost { justify-content: center; }
         .section { padding: 60px 28px; }
         .about-grid { grid-template-columns: 1fr; }
         .projects-grid { grid-template-columns: 1fr; }
         .contact-section { padding: 60px 24px; }
+        .contact-links { flex-direction: column; align-items: stretch; }
+        .contact-links .btn { justify-content: center; display: flex; align-items: center; text-align: center; }
+    }
+
+    @media (max-width: 420px) {
+        .nav-links { gap: 10px; }
+        .nav-links a { font-size: 0.65rem; }
+        .theme-toggle { padding: 5px 9px; font-size: 0.68rem; }
     }
 </style>
 </head>
@@ -799,6 +810,21 @@
                 <span class="project-tag">CSV Export</span>
             </div>
             <a href="https://github.com/AceARG/Peekwatch" target="_blank" class="project-link">View on GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+
+        <div class="project-card fade-in">
+            <div class="project-card-header">
+                <div class="project-icon"><i class="fa-solid fa-car"></i></div>
+                <h3>Drive.co.za</h3>
+            </div>
+            <p>Built APIs and backend-for-frontend (BFF) layers for Drive.co.za, wiring up client-side screens across stock management, legal contract workflows, and finance reporting — delivered as a client project through Ideal Solutions.</p>
+            <div class="project-tags">
+                <span class="project-tag">Java</span>
+                <span class="project-tag">Spring Boot</span>
+                <span class="project-tag">BFF</span>
+                <span class="project-tag">Angular</span>
+                <span class="project-tag">PostgreSQL</span>
+            </div>
         </div>
     </div>
 </section>

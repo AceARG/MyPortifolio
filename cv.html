@@ -105,6 +105,13 @@
         text-decoration: none;
     }
 
+    /* ── Responsive (web view only) ── */
+    @media screen and (max-width: 600px) {
+        .cv-header { flex-wrap: wrap; align-items: flex-start; gap: 10px; }
+        .contact-block { text-align: left; }
+        .two-col { grid-template-columns: 1fr; gap: 16px 0; }
+    }
+
     /* ── Download button (web only) ── */
     .download-btn {
         display: inline-flex;
@@ -260,6 +267,16 @@
             <li>Improved system performance by optimizing CSV import/export pipelines and refining database queries, reducing processing overhead for large data sets.</li>
             <li>Adapted to a dynamic team that scaled from 4 to 13 developers and back down to 2, being consistently selected to contribute across every project phase.</li>
             <li>Deployed and supported applications on AWS cloud infrastructure.</li>
+        </ul>
+    </div>
+    <div class="entry">
+        <div class="entry-header">
+            <span class="entry-title">Drive.co.za &mdash; Client Project</span>
+            <span class="entry-date">2024 – Present</span>
+        </div>
+        <div class="entry-org">Ideal Solutions</div>
+        <ul>
+            <li>Built APIs and backend-for-frontend (BFF) layers for Drive.co.za, wiring up client-side screens across stock management, legal contract workflows, and finance reporting.</li>
         </ul>
     </div>
 </section>
